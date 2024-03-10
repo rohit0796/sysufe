@@ -572,7 +572,7 @@ export default function Story() {
 
             <div className='section-2-head'>
               {/* Read stories on selectedValue from popular, else mappable values from the dropdown */}
-              <h1>Read stories on <a href={`/allstories/${urlCat}`}><FaExternalLinkAlt size={windowWidth > 715 ? 20 : 15} /></a> <br /> {urlCat} </h1>
+              <h1>Read stories on <a onClick={() => navigate(`/allstories/${urlCat}`)}><FaExternalLinkAlt size={windowWidth > 715 ? 20 : 15} /></a> <br /> {urlCat} </h1>
               {/*adding ref to close on click outside  */}
               <div className='looking' ref={dropdownRef}>
                 <div className='choose'>
